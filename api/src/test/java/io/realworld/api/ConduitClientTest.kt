@@ -13,6 +13,8 @@ class ConduitClientTest {
         runBlocking {
             val articles = conduitClient.api.getArticles()
             assertNotNull(articles.body()?.articles)
+
+
         }
     }
 }
